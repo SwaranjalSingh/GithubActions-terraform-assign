@@ -5,4 +5,8 @@ resource "aws_instance" "ec2" {
       "name" = var.tag_name
       "Owner" = var.tag_owner
     }
+    volume_tags = {
+      "name" = var.tag_name
+      "Owner" = var.tag_owner
+    }
 }
