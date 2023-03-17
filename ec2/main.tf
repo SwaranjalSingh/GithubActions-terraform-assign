@@ -3,6 +3,6 @@ resource "aws_instance" "ec2" {
     instance_type = var.instance_type
     tags = {
       "name" = var.tag_name
-      "Owner" = var.tag.owner
+      "Owner" = var.tag_owner
     }
 }
