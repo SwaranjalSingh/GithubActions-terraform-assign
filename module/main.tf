@@ -4,6 +4,7 @@ module "ec2" {
     ami = each.value.ami
     instance_type = each.value.instance_type
     tag_name = each.value.tag_name
+    tag_owner = each.value.tag_owner
 }
 
 module "s3" {
