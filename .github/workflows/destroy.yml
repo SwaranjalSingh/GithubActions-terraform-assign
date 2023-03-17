@@ -3,8 +3,8 @@ name: swara-destroy
 on:
   workflow_dispatch:
 env:
-#   BUCKET: swaranjal
-#   TFSTATE_FILE: terraform.tfstate
+  BUCKET: swaranjal
+  TFSTATE_FILE: terraform.tfstate
   aws_region: us-east-1
 
 jobs:
